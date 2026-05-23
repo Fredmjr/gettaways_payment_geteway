@@ -17,6 +17,7 @@ export const webkhookapiUrl = async (req, res) => {
       console.log("Received event type", event); // proof checkering body contents
 
       // Safely extract the event data and process it asynchronously
+      //my comment below needs to be double checked
       // Look for the specific event when a transaction collection succeeds
       // This reference (lenco_client_reference) will match the uuidv4 reference you originally generated during checkout
       if (event.event === "collection.successful") {
