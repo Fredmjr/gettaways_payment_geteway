@@ -1,0 +1,14 @@
+./node_modules
+node_modules
+
+./trash
+trash
+
+./torrent_assets
+torrent_assets
+
+./db/database.db
+db/database.db
+
+./.env
+.env

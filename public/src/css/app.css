@@ -1,0 +1,39 @@
+/*Font declaraion*/
+@font-face {
+  font-family: reddir-extrabold;
+  src: url(/assets/fonts/reddit/RedditSansFudge-ExtraBold-BF651644f142adf.ttf);
+}
+
+@font-face {
+  font-family: reddir-regular;
+  src: url(/assets/fonts/reddit/RedditSansVanilla-Regular-BF651644f0acea9.ttf);
+}
+
+@font-face {
+  font-family: reddir-light;
+  src: url(/assets/fonts/reddit/RedditSansChocolate-Light-BF651644f140815.ttf);
+}
+
+:root {
+  --drk-theme1: #4a4a4a;
+  --drk-theme2: rgb(43, 45, 48);
+}
+
+body {
+  margin: 0px;
+  font-family: reddir-regular;
+  font-size: 12px;
+  background-color: var(--drk-theme2);
+  color: white;
+}
+#pymntsrchpg {
+  margin: 0px;
+  font-family: reddir-regular;
+  font-size: 12px;
+  background-color: var(--drk-theme2);
+  color: white;
+}
+#pymnttknIDdscptn {
+  font-size: 10px;
+  color: grey;
+}
