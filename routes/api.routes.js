@@ -1,8 +1,9 @@
 import express from "express";
-import { webkhookapiUrl } from "../controllers/api.controller.js";
+import { testUrl, webkhookapiUrl } from "../controllers/api.controller.js";
 
 const router = express.Router();
 
 router.get("/api", webkhookapiUrl);
+router.post("/test", testUrl);
 
 export default router;

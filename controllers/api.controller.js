@@ -42,3 +42,22 @@ export const webkhookapiUrl = async (req, res) => {
     }
   }
 };
+
+import { webhook } from "../payment_models/lenco/webhook.js";
+
+export const testUrl = async (req, res) => {
+  try {
+    const a = req.body;
+    if (a) {
+      return res.status(200).json({
+        mgs: "success",
+      });
+    }
+  } catch (error) {
+    if (!res.headersSent) {
+      res.status(400).json({
+        erMgs: "Unable to process request!",
+      });
+    }
+  }
+};
