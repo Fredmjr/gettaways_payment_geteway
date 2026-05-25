@@ -43,11 +43,10 @@ export const webkhookapiUrl = async (req, res) => {
   }
 };
 
-import { webhook } from "../payment_models/lenco/webhook.js";
-
 export const testUrl = async (req, res) => {
+  const a = req.body;
+
   try {
-    const a = req.body;
     if (a) {
       return res.status(200).json({
         mgs: "success",

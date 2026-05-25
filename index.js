@@ -28,13 +28,13 @@ app.set("/views", path.join(__dirname, "views", "components"));
 
 app.use(express.static("public"));
 
-app.get("/", (req, res) => {
+/* app.get("/", (req, res) => {
   res.render("index.hbs");
 });
 app.get("/srch", (req, res) => {
   res.render("srchpg.hbs");
 });
-
+ */
 app.use("/app", appRouter);
 app.use("/api", apiRouter);
 /* app.use("/usr", userRouter); */
