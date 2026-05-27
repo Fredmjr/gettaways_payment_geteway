@@ -3,6 +3,6 @@ import { webkhookapiUrl } from "../controllers/api.controller.js";
 
 const router = express.Router();
 
-router.get("/webkhook", webkhookapiUrl);
+router.post("/webkhook", webkhookapiUrl);
 
 export default router;

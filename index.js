@@ -9,7 +9,7 @@ import lencoapiRouter from "./routes/lencoapi.routes.js"; //normal lenco api
 import sequelize from "./config/db.js";
 
 const app = express();
-const port = 8105;
+const port = 8100;
 //lenco - raw body data parsing
 const lencoParser = express.json({
   verify: (req, res, buf) => {
