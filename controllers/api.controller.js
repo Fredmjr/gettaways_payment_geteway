@@ -1,3 +1,4 @@
+import { test_saveData } from "../inventory/data/test.js";
 import { webhook } from "../payment_models/lenco/webhook.js";
 
 export const webkhookapiUrl = async (req, res) => {
@@ -32,6 +33,8 @@ export const webkhookapiUrl = async (req, res) => {
 
         // Task #1: Update payment_sttus:Pending to payment_sttus:Paid in db by use of find by the uuid generate in the initializer.
         // Task #2: Deliver payment
+        //test function
+        test_saveData(transaction_data);
       }
     }
   } catch (error) {
