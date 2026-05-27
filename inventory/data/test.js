@@ -17,4 +17,5 @@ export const test_saveData = (obj) => {
   fs.appendFileSync(filePath, content + "\n", "utf8");
 };
 
-test_saveData(data);
+/* test_saveData(data);
+ */
