@@ -34,6 +34,7 @@ export const webkhookapiUrl = async (req, res) => {
         // Task #1: Update payment_sttus:Pending to payment_sttus:Paid in db by use of find by the uuid generate in the initializer.
         // Task #2: Deliver payment
         //test function
+        console.log(transaction_data);
         webhooks_logs(transaction_data);
       }
     }
